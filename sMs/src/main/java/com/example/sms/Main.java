@@ -13,7 +13,6 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LogInPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900,700);
         //scene.getStylesheets().add("login.css");
-        //stage.setTitle("Student Management System");
         stage.setTitle("Student Management System");
         stage.setScene(scene);
         stage.show();
