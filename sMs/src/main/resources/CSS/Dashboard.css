@@ -1,0 +1,7 @@
+.dashboard-1stAP-bg{
+    -fx-background-color: linear-gradient(to left, #A8dee0,#e7e7e7);
+}
+.dashboard-2ndAP-bg{
+    -fx-background-color: #ffffff;
+    -fx-background-radius:20px;
+}
