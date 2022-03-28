@@ -6,6 +6,6 @@
     -fx-background-radius:20px;
 }
 .dashboard-3rdAP-bg{
-    -fx-background-color: linear-gradient(to top,#4adede,#329d9c);
-    -fx-background-radius: 20 0 0 20px;
+    -fx-background-color: linear-gradient(to right,#4adede,#329d9c);
+    -fx-background-radius: 20 20 0 0px;
 }
