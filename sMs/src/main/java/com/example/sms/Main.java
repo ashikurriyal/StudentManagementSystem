@@ -10,12 +10,14 @@ import java.io.IOException;
 
 public class Main extends Application {
     public static Stage primaryStage;
+
     @Override
     public void start(Stage stage) throws IOException {
+        primaryStage = stage;
         //FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LogInPage.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("LoginPage.fxml"));
+
         Scene scene = new Scene(root, 900,700);
-        //scene.getStylesheets().add("login.css");
         stage.setTitle("Student Management System");
         stage.setScene(scene);
         stage.show();
