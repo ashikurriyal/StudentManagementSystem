@@ -12,11 +12,7 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="dashboard-1stAP-bg" stylesheets="@../../../CSS/Dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.DashboardController">
    <children>
-<<<<<<< HEAD
-      <AnchorPane layoutX="47.0" layoutY="42.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css" AnchorPane.bottomAnchor="42.799999999999955" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="46.60000000000002" AnchorPane.topAnchor="42.0">
-=======
       <AnchorPane layoutX="44.0" layoutY="43.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
->>>>>>> 081b9ff2ba53c26f40c1bde7f6defe91a000626c
          <children>
             <AnchorPane prefHeight="615.0" prefWidth="163.0" styleClass="dashboard-3rdAP-bg" stylesheets="@../../../CSS/Dashboard.css">
                <children>
