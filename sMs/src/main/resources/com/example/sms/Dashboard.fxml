@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="dashboard-1stAP-bg" stylesheets="@../../../CSS/Dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.DashboardController">
    <children>
-      <AnchorPane layoutX="47.0" layoutY="42.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+      <AnchorPane layoutX="47.0" layoutY="42.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css" AnchorPane.bottomAnchor="42.799999999999955" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="46.60000000000002" AnchorPane.topAnchor="42.0">
          <children>
             <AnchorPane prefHeight="100.0" prefWidth="806.0" styleClass="dashboard-3rdAP-bg" stylesheets="@../../../CSS/Dashboard.css">
                <children>
