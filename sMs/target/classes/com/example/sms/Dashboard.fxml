@@ -89,7 +89,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <Button alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="165.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
+                  <Button fx:id="logout" alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="165.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
                      <font>
                         <Font name="Calibri Bold" size="18.0" />
                      </font>

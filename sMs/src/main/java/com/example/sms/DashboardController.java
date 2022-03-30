@@ -1,16 +1,14 @@
 package com.example.sms;
 
 import javafx.fxml.FXML;
-import javafx.scene.text.Text;
+import javafx.scene.control.Button;
+
 
 public class DashboardController {
 
+
     @FXML
-    private Text txt_username;
+    private Button logout;
 
-    void set_username(String username){
-
-        txt_username.setText(username);
-    }
 
 }
