@@ -12,13 +12,12 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="new-bg" stylesheets="@../../../CSS/LogInPage.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.LogInPageController">
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="LoginPagebg" stylesheets="@../../../CSS/LogInPage.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.LogInPageController">
    <children>
-      <ImageView fitHeight="700.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="700.0" fitWidth="900.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/abstract_bg.jpg" />
-         </image>
-      </ImageView>
+         </image></ImageView>
       <AnchorPane layoutX="150.0" layoutY="175.0" prefHeight="350.0" prefWidth="600.0" style="-fx-background-radius: 20;">
          <children>
             <AnchorPane prefHeight="356.0" prefWidth="300.0" style="-fx-background-radius: 20;" styleClass="new-bg-left" stylesheets="@../../../CSS/LogInPage.css">

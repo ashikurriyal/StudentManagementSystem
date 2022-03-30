@@ -23,6 +23,7 @@ public class LogInPageController {
         FXMLScene fxmlScene = FXMLScene.load("Dashboard.fxml");
         Parent root = fxmlScene.root;
         DashboardController dashboardController = (DashboardController) fxmlScene.controller;
+        dashboardController.set_username(tf_username.getText());
         Main.primaryStage.setScene(new Scene(root, 900, 700));
     }
 
