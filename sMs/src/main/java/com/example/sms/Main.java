@@ -15,7 +15,6 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
        // primaryStage = stage;
-
         Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
         Scene scene = new Scene(root, 900, 700);
 
