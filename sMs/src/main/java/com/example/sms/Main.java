@@ -8,16 +8,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
 public class Main extends Application {
-    public static Stage primaryStage;
+    //public static Stage primaryStage;
 
     @Override
     public void start(Stage stage) throws IOException {
-        primaryStage = stage;
-        //FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("LogInPage.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("LogInPage.fxml"));
+       // primaryStage = stage;
 
-        Scene scene = new Scene(root, 900,700);
+        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        Scene scene = new Scene(root, 900, 700);
+
         stage.setTitle("Student Management System");
         stage.setScene(scene);
         stage.show();
@@ -27,3 +28,4 @@ public class Main extends Application {
         launch();
     }
 }
+
