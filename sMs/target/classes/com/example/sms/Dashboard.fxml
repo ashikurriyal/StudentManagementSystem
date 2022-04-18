@@ -53,7 +53,24 @@
                               <String fx:value="sidebar-item" />
                            </styleClass>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Login Info" textFill="WHITE">
+                        <Button fx:id="reg_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Registration" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/registration_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu-button-design" />
+                              <String fx:value="menu-hover-button-design" />
+                              <String fx:value="sidebar-item" />
+                           </styleClass>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Result History" textFill="WHITE">
                            <font>
                               <Font name="Calibri Bold" size="18.0" />
                            </font>
@@ -61,6 +78,23 @@
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Images/InfoIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu-button-design" />
+                              <String fx:value="menu-hover-button-design" />
+                              <String fx:value="sidebar-item" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="vc_status_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Vaccine Status" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/vc_status.png" />
                                  </image>
                               </ImageView>
                            </graphic>

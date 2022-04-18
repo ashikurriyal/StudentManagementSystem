@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
        // primaryStage = stage;
 
-        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("LogInPage.fxml"));
         Scene scene = new Scene(root, 900, 700);
 
         stage.setTitle("Student Management System");
