@@ -53,7 +53,24 @@
                               <String fx:value="sidebar-item" />
                            </styleClass>
                         </Button>
-                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Login Info" textFill="WHITE">
+                        <Button fx:id="reg_btn" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Registration" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/registration_logo.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu-button-design" />
+                              <String fx:value="menu-hover-button-design" />
+                              <String fx:value="sidebar-item" />
+                           </styleClass>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Result History" textFill="WHITE">
                            <font>
                               <Font name="Calibri Bold" size="18.0" />
                            </font>
@@ -61,6 +78,23 @@
                               <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Images/InfoIcon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="menu-button-design" />
+                              <String fx:value="menu-hover-button-design" />
+                              <String fx:value="sidebar-item" />
+                           </styleClass>
+                        </Button>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToVaccineStatus" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Vaccine Status" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/vc_status.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -89,7 +123,7 @@
                         </Button>
                      </children>
                   </VBox>
-                  <Button fx:id="logout" alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="165.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
+                  <Button fx:id="logout" alignment="BASELINE_LEFT" layoutY="560.0" mnemonicParsing="false" onAction="#switchToLogInPage" prefHeight="34.0" prefWidth="165.0" stylesheets="@../../../CSS/Dashboard.css" text="Log out" textFill="WHITE">
                      <font>
                         <Font name="Calibri Bold" size="18.0" />
                      </font>
@@ -157,6 +191,7 @@
                         <Image url="@../../../Images/studentIconNew.png" />
                      </image>
                   </ImageView>
+                  <Text fx:id="txt_username" layoutX="744.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName" />
                </children>
             </AnchorPane>
          </children>
