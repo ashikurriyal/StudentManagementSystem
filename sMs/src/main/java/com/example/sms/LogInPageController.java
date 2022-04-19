@@ -34,7 +34,8 @@ public class LogInPageController{
     @FXML
     public void signIn(ActionEvent event) throws IOException {
 
-        Path path = Paths.get("C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/Login.txt");
+        //use path as like this - C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/Login.txt
+        Path path = Paths.get("");
 
         //Counts number of line in text file
         long count = Files.lines(path).count();
