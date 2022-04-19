@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,6 +19,12 @@ public class DashboardController {
     private Button logout;
     private Stage stage;
     private Scene scene;
+
+    @FXML
+    private Label label_username;
+    public void displayName(String username){
+        label_username.setText("Hello "+username);
+    }
 
     public void switchToRegistration(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Registration.fxml"));

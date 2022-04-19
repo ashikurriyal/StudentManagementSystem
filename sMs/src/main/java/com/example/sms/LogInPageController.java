@@ -57,10 +57,15 @@ public class LogInPageController{
                 if(name.trim().equals(tf_username.getText())){ //Note trim() method remove space from front and behind of string if there is any
                     //Now checking if password match
                     if(password.trim().equals(password_field.getText())){
+                        String username = tf_username.getText();
+                        FXMLLoader loader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+                        Object root = loader.load();
+                        DashboardController dashboardController = loader.getController();
+                        dashboardController.displayName(username);
 
-                        Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
+                        //Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
                         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                        Scene scene = new Scene(root);
+                        Scene scene = new Scene((Parent) root);
                         stage.setScene(scene);
                         stage.show();
                     }
