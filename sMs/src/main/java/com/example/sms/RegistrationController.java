@@ -56,8 +56,6 @@ public class RegistrationController {
         listOfCourses.getItems().remove(selectedCourse);
     }
 
-
-
     //For switching scene to Dashboard
     public void switchToDashboard(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Dashboard.fxml"));
@@ -67,5 +65,13 @@ public class RegistrationController {
         stage.show();
     }
 
+    @FXML
+    void switchToVaccineStatus(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("VaccineStatus.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }

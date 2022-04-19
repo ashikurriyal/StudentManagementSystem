@@ -14,9 +14,10 @@ import java.io.IOException;
 
 public class DashboardController {
 
+    @FXML
+    private Button logout;
     private Stage stage;
     private Scene scene;
-    private Parent root;
 
     public void switchToRegistration(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("Registration.fxml"));
@@ -25,10 +26,22 @@ public class DashboardController {
         stage.setScene(scene);
         stage.show();
     }
-
+    @FXML
+    void switchToVaccineStatus(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("VaccineStatus.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
-    private Button logout;
-
+    void switchToLogInPage(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("LogInPage.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }
