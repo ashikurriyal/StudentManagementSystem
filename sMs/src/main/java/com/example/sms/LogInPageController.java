@@ -31,11 +31,13 @@ public class LogInPageController{
     @FXML
     private Label wrongInput;
 
+
     @FXML
     public void signIn(ActionEvent event) throws IOException {
 
         //use path as like this - C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/Login.txt
-        Path path = Paths.get("E:/University/6th Trimester/CSE 2118(D) - Advanced Object Oriented Programming Laboratory/StudentManagementSystem/sMs/src/main/resources/Info/Login.txt");
+        //use path as like this - C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/VaccineUpdate.txt
+        Path path = Paths.get("C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/Login.txt");
 
         //Counts number of line in text file
         long count = Files.lines(path).count();

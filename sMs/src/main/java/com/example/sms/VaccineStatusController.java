@@ -51,7 +51,7 @@ public class VaccineStatusController implements Initializable  /*implements Init
         String date2 = (datePicker2.getValue() + "\n");
 
 
-        File file = new File("E:\\University\\6th Trimester\\CSE 2118(D) - Advanced Object Oriented Programming Laboratory\\StudentManagementSystem\\sMs\\src\\main\\resources\\Info\\VaccineUpdate.txt");
+        File file = new File("C:/Users/Nahid Raz/Documents/Git/StudentManagementSystem/sMs/src/main/resources/Info/VaccineUpdate.txt");
         FileWriter fw = null;
         try {
             fw = new FileWriter(file);
@@ -98,6 +98,22 @@ public class VaccineStatusController implements Initializable  /*implements Init
         stage.setScene(scene);
         stage.show();
 
+    }
+    @FXML
+    void switchToSettings(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("FAQ.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    void switchToPayTheFess(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("PayTheFess.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

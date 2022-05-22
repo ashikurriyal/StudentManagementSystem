@@ -23,7 +23,7 @@ public class DashboardController {
     @FXML
     private Label label_username;
     public void displayName(String username){
-        label_username.setText("Hello "+username);
+        label_username.setText(""+username);
     }
 
     public void switchToRegistration(ActionEvent event) throws IOException {
@@ -51,4 +51,21 @@ public class DashboardController {
         stage.show();
     }
 
+    @FXML
+    void switchToSettings(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("FAQ.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    @FXML
+    void switchToPayTheFess(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("PayTheFess.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
+

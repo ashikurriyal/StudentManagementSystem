@@ -15,7 +15,7 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="dashboard-1stAP-bg" stylesheets="@../../../CSS/Dashboard.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.VaccineStatusController">
     <children>
-        <AnchorPane layoutX="43.0" layoutY="53.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
+        <AnchorPane layoutX="43.0" layoutY="43.0" prefHeight="615.0" prefWidth="806.0" styleClass="dashboard-2ndAP-bg" stylesheets="@../../../CSS/Dashboard.css">
             <children>
                 <AnchorPane prefHeight="615.0" prefWidth="163.0" styleClass="dashboard-3rdAP-bg" stylesheets="@../../../CSS/Dashboard.css">
                     <children>
@@ -72,14 +72,14 @@
                                         <String fx:value="sidebar-item" />
                                     </styleClass>
                                 </Button>
-                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Result History" textFill="WHITE">
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToPayTheFess" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Pay The Fees" textFill="WHITE">
                                     <font>
                                         <Font name="Calibri Bold" size="18.0" />
                                     </font>
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/InfoIcon.png" />
+                                                <Image url="@../../../Images/PaymentLogo.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
@@ -106,14 +106,14 @@
                                         <String fx:value="sidebar-item" />
                                     </styleClass>
                                 </Button>
-                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="Settings" textFill="WHITE">
+                                <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchToSettings" prefHeight="48.0" prefWidth="163.0" stylesheets="@../../../CSS/Dashboard.css" text="FAQ" textFill="WHITE">
                                     <font>
                                         <Font name="Calibri Bold" size="18.0" />
                                     </font>
                                     <graphic>
                                         <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/settings-vector-icon-removebg-preview.png" />
+                                                <Image url="@../../../Images/FAQ_Logo.png" />
                                             </image>
                                         </ImageView>
                                     </graphic>
